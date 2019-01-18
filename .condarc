@@ -1,0 +1,9 @@
+create_default_packages:
+  - pip
+  - ipython
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - cookiecutter
