@@ -102,6 +102,7 @@ alias gdwn="git diff -- . ':(exclude)*.ipynb'"
 alias ys="yarn start"
 alias jn="jupyter notebook"
 alias jl="jupyter lab"
+alias ca="conda activate"
 
 case $(uname -a) in
    *Microsoft*) unsetopt BG_NICE ;;
