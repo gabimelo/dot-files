@@ -1,3 +1,6 @@
+channels:
+  - conda-forge
+  - defaults
 create_default_packages:
   - pip
   - ipython
@@ -8,3 +11,4 @@ create_default_packages:
   - scikit-learn
   - cookiecutter
   - ipykernel
+  - nb_conda_kernels
