@@ -1,2 +1,2 @@
  #!/bin/sh 
- flake8 . 
+python3 -m  flake8 . 
