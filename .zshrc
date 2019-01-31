@@ -113,3 +113,5 @@ esac
 
 # if using Docker on Windows Subsystem for Linux, uncomment below
 # export DOCKER_HOST=localhost:2375
+
+# . $HOME/anaconda3/etc/profile.d/conda.sh
