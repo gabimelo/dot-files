@@ -1,4 +1,4 @@
-git config --global user.email "gabimelo10@gmail.com"
+git config --global user.email ""
 git config --global user.name "Gabriela Melo"
 
 # Assumes SSH key does not exist yet
