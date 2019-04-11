@@ -103,6 +103,7 @@ alias ys="yarn start"
 alias jn="jupyter notebook"
 alias jl="jupyter lab"
 alias ca="conda activate"
+alias jup_from_env="python -m ipykernel install --user --name $1 --display-name '$1'"
 
 case $(uname -a) in
    *Microsoft*) unsetopt BG_NICE ;;
