@@ -104,6 +104,7 @@ alias jn="jupyter notebook"
 alias jl="jupyter lab"
 alias ca="conda activate"
 alias jup_from_env="python -m ipykernel install --user --name $1 --display-name '$1'"
+alias jup_lab_ext="conda install -c conda-forge nodejs && jupyter labextension install @jupyterlab/toc && jupyter labextension install @krassowski/jupyterlab_go_to_definition"
 
 case $(uname -a) in
    *Microsoft*) unsetopt BG_NICE ;;
