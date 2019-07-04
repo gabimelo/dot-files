@@ -32,3 +32,5 @@ sudo apt-get update
 sudo apt-get install spotify-client
 
 # Anaconda --> manually download and then bash Anaconda-latest-Linux-x86_64.sh
+
+mkdir ~/Projects
