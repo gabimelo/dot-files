@@ -98,12 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gdwn="git diff -- . ':(exclude)*.ipynb'"
-alias ys="yarn start"
-alias jn="jupyter notebook"
-alias jl="jupyter lab"
-alias ca="conda activate"
-alias jup_lab_ext="conda install -c conda-forge nodejs && jupyter labextension install @jupyterlab/toc && jupyter labextension install @krassowski/jupyterlab_go_to_definition"
 
 jup_from_env() {python -m ipykernel install --user --name $1 --display-name $1}
 
@@ -111,8 +105,9 @@ case $(uname -a) in
    *Microsoft*) unsetopt BG_NICE ;;
 esac
 
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /usr/local/bin/virtualenvwrapper.sh
 
 # if using Docker on Windows Subsystem for Linux, uncomment below
 # export DOCKER_HOST=localhost:2375
