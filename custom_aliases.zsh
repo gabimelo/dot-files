@@ -14,3 +14,5 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 alias t='tree'
+
+alias freeze='pip freeze > requirements.txt'
