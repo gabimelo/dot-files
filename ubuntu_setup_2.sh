@@ -1,4 +1,4 @@
-sudo apt-get install vim tmux jq tree xclip
+sudo apt-get install vim tmux jq tree xclip htop
 
 # FZF
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
