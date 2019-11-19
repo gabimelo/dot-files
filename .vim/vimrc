@@ -53,7 +53,7 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
-colorscheme badwolf
+colorscheme codedark
 
 set number
 
@@ -72,4 +72,11 @@ set hlsearch
 
 set foldenable 
 
+set nobackup
+set noswapfile
+set noundofile
+
 " help from https://dougblack.io/words/a-good-vimrc.html and https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
+
+set rtp+=~/.fzf
+
