@@ -9,6 +9,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-highlightedyank'
 Plug 'tmhedberg/SimpylFold'
 Plug 'morhetz/gruvbox'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -29,3 +31,5 @@ set background=dark " use dark mode
 :set nu rnu
 
 " set splitbelow  " configure deoplete method preview to open below
+
+nmap ,e :Files<CR>
