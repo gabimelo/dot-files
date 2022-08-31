@@ -13,6 +13,7 @@ alias copy='xclip -sel clip'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
-alias t='tree'
+alias t="tree -I '__pycache__'"
+alias wk="workon"
 
 alias freeze='pip freeze > requirements.txt'
