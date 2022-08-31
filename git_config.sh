@@ -2,7 +2,7 @@ git config --global user.email ""
 git config --global user.name "Gabriela Melo"
 
 # Assumes SSH key does not exist yet
-ssh-keygen -t rsa -b 4096 -C "gabimelo10@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "email"
 
 if ! eval $(ssh-agent -s) | grep -q 'Agent pid'; then
    echo "SSH Agent seems not to be running, please verify";
