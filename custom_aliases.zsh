@@ -12,7 +12,9 @@ alias aliases_edit='vim $ZSH_CUSTOM/custom_aliases.zsh'
 alias copy='xclip -sel clip'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
-
+alias grepr='grep -r --exclude=\*.pyc --exclude=\*.csv --exclude-dir=.dvc --exclude-dir=.pytest-cache'
 alias t='tree'
 
 alias freeze='pip freeze > requirements.txt'
+
+alias aws="docker run --rm -it --network=host -v ~/.aws:/root/.aws amazon/aws-cli"

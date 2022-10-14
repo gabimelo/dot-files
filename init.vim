@@ -4,11 +4,16 @@ Plug 'davidhalter/jedi-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
 Plug 'machakann/vim-highlightedyank'
 Plug 'tmhedberg/SimpylFold'
 Plug 'morhetz/gruvbox'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
+Plug 'junegunn/fzf.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
@@ -29,3 +34,8 @@ set background=dark " use dark mode
 :set nu rnu
 
 " set splitbelow  " configure deoplete method preview to open below
+
+nmap ,e :Files<CR>
+nmap <silent> <C-D> :NERDTreeToggle<CR>
+
+let NERDTreeShowHidden=1

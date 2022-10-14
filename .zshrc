@@ -107,6 +107,8 @@ case $(uname -a) in
 esac
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# export FZF_DEFAULT_COMMAND='fdfind --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude .git'
 
 source /usr/local/bin/virtualenvwrapper.sh
 
