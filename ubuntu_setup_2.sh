@@ -6,5 +6,6 @@ mkdir ~/Projects
 # FZF
 # diff-so-fancy
 # pyenv
+# pyenv virtualenv + set up with nvim
 # pip-tools
 # pre-commit
