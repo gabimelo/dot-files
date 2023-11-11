@@ -1,5 +1,3 @@
-# Assuming Chrome was already manually installed...
-
 # Make sure runnning on ZSH
 if [[ ! $SHELL =~ "/usr/bin/zsh" ]]; then
 	echo "Not running on Zsh"

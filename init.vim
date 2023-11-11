@@ -17,10 +17,14 @@ Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'lewis6991/gitsigns.nvim', {'tag': 'v0.5'}
+" Plug 'machakann/vim-sandwich', {'branch': 'master'}
 
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
+
+call deoplete#custom#option('sources', {'python': ['jedi', 'neosnippet']})
 
 " disable autocompletion, because we use deoplete for completion
 let g:jedi#completions_enabled = 0
@@ -44,3 +48,11 @@ nmap ,e :Files<CR>
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
 let NERDTreeShowHidden=1
+
+let g:python3_host_prog = '/home/gabriela/.pyenv/versions/neovimpy11/bin/python'
+
+" let g:sandwich#recipes = deepcopy(g:sandwich#default_recipe)
+
+lua << EOF
+	require('gitsigns').setup()
+EOF
