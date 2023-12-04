@@ -110,6 +110,21 @@ esac
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git --exclude .tox'  # mac
 export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude .git --exclude .tox'
+#
+# Use fd (https://github.com/sharkdp/fd) instead of the default find
+# command for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+  # fd --hidden --follow --exclude ".git" --exclude ".tox" . "$1"  # mac
+  fdfind --hidden --follow --exclude ".git" --exclude ".tox" . "$1"  # ubuntu
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  # fd --type d --hidden --follow --exclude ".git" --exclude ".tox" . "$1"  # mac
+  fdfind --type d --hidden --follow --exclude ".git" --exclude ".tox" . "$1"  # ubuntu
+}
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh

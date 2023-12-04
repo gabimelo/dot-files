@@ -1,6 +1,14 @@
 1password
 Chrome
+Grammarly
 Notion
+iTerm2
 Slack
 Spotify
 Todoist
+VSCode
+
+Bookmarks:
+Excalidraw
+Hemingway Editor
+Mermaid JS
