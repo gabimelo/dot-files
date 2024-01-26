@@ -3,6 +3,7 @@ sudo apt-get install vim tmux jq tree xclip htop neovim
 mkdir ~/Projects
 
 # check latest docs to install and set up
+# vim-plug
 # FZF
 # diff-so-fancy
 # pyenv
