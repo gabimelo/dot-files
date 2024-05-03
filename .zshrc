@@ -140,3 +140,5 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 export PYTHONBREAKPOINT="ipdb.set_trace"
+
+export PATH=$PATH:~/.diff-so-fancy

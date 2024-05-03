@@ -19,6 +19,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'lewis6991/gitsigns.nvim', {'tag': 'v0.5'}
 " Plug 'machakann/vim-sandwich', {'branch': 'master'}
+Plug 'hashvim/vim-terraform'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
@@ -56,3 +58,5 @@ let g:python3_host_prog = '/home/gabriela/.pyenv/versions/neovimpy11/bin/python'
 lua << EOF
 	require('gitsigns').setup()
 EOF
+
+set clipboard=unnamedplus
