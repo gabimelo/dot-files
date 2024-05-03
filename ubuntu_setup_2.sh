@@ -1,11 +1,13 @@
-sudo apt-get install vim tmux jq tree xclip htop neovim
+# Make sure runnning on ZSH
+if [[ ! $SHELL =~ "/usr/bin/zsh" ]]; then
+	echo "Not running on Zsh"
+	exit
+fi
 
-mkdir ~/Projects
+# Basics
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install curl git
 
-# check latest docs to install and set up
-# FZF
-# diff-so-fancy
-# pyenv
-# pyenv virtualenv + set up with nvim
-# pip-tools
-# pre-commit
+# Oh My Zsh
+# .zshrc available at same GitHub repo as this script
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
