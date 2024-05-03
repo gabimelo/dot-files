@@ -1,8 +1,14 @@
 {
+    "black-formatter.args": [
+	"-l",
+	"120"
+    ],
     "workbench.colorTheme": "Default Dark+",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
+    "workbench.editor.wrapTabs": true,
+    "workbench.sideBar.location": "right",
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
@@ -12,11 +18,14 @@
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true
     },
+    "python.analysis.inlayHints.functionReturnTypes": true,
     "python.defaultInterpreterPath": "/home/gabriela/.pyenv/versions/base12/bin/python",
+    "python.envFile": "${workspaceFolder}/.vscode/dev.env",
     "explorer.excludeGitIgnore": true,
     "excalidraw.theme": "light",
     "vim.enableNeovim": true,
     "vim.neovimUseConfigFile": true,
+    "vim.useSystemClipboard": true,
     "editor.lineNumbers": "relative",
     "notebook.lineNumbers": "on"
 }

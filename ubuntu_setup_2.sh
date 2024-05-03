@@ -1,3 +1,5 @@
+# TODO add conditionals based on OS
+
 # Make sure runnning on ZSH
 if [[ ! $SHELL =~ "/usr/bin/zsh" ]]; then
 	echo "Not running on Zsh"
