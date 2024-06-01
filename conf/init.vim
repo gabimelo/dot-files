@@ -21,6 +21,7 @@ Plug 'lewis6991/gitsigns.nvim', {'tag': 'v0.5'}
 " Plug 'machakann/vim-sandwich', {'branch': 'master'}
 Plug 'hashvim/vim-terraform'
 Plug 'github/copilot.vim'
+Plug 'mechatroner/rainbow_csv'
 
 call plug#end()
 
