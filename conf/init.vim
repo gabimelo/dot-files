@@ -36,6 +36,8 @@ let g:jedi#completions_enabled = 0
 let g:jedi#use_splits_not_buffers = "right"
 
 let g:airline_theme='night_owl'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#formatter='unique_tail_improved'
 
 colorscheme gruvbox
 set background=dark " use dark mode
@@ -49,8 +51,10 @@ set background=dark " use dark mode
 
 nmap ,e :Files<CR>
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+nmap <silent> <leader>e :NERDTreeFind<CR>
 
 let NERDTreeShowHidden=1
+let g:NERDTreeWinPos='right'
 
 let g:python3_host_prog = '/home/gabriela/.pyenv/versions/neovimpy11/bin/python'
 
