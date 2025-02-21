@@ -1,14 +1,8 @@
 1password
 Chrome
-Grammarly
-Notion
+Docker
 iTerm2
+MeetingBar
 Slack
 Spotify
-Todoist
-VSCode
-
-Bookmarks:
-Excalidraw
-Hemingway Editor
-Mermaid JS
+Superwhisper

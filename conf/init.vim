@@ -18,6 +18,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
 Plug 'junegunn/fzf.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'lewis6991/gitsigns.nvim', {'tag': 'v0.5'}
+Plug 'tpope/vim-fugitive'
 " Plug 'machakann/vim-sandwich', {'branch': 'master'}
 " Plug 'hashvim/vim-terraform'
 Plug 'github/copilot.vim'
@@ -71,6 +72,7 @@ let g:NERDTreeWinPos='right'
 " Copilot
 " Alternatively to tab, accept suggestions with C-J
 imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+"let g:copilot_workspace_folders = []
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -85,6 +87,7 @@ let g:jedi#completions_enabled = 0
 " Airline
 let g:airline_theme='night_owl'
 "let g:airline_theme='base16'
+let g:ailine_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline#extensions#tabline#formatter='unique_tail_improved'
@@ -96,7 +99,7 @@ colorscheme onedark
 " set background=light " uncomment to use light mode
 
 " Python
-let g:python3_host_prog = '/home/gabriela/.pyenv/versions/neovimpy11/bin/python'
+let g:python3_host_prog = '~/.pyenv/versions/neovimpy13/bin/python'
 " let g:deoplete#sources#jedi#extra_path=""
 
 " Git Signs

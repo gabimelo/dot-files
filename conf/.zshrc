@@ -145,3 +145,13 @@ eval "$(pyenv virtualenv-init -)"
 export PYTHONBREAKPOINT="ipdb.set_trace"
 
 export PATH=$PATH:~/.diff-so-fancy
+
+sedr () {
+	original=${1}
+	new=${2}
+	directory=${3:-.}
+	find $directory -type f -name '*.py' exec sed -i '' s/$original/$new/g {} +
+}
+
+# git spice completions
+# eval "$(gs shell completion bash)"

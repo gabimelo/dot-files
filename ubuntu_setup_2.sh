@@ -7,7 +7,7 @@ if [[ ! $SHELL =~ "/usr/bin/zsh" ]]; then
 fi
 
 # Basic
-sudo apt-get update && sudo apt-get upgrad
+sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install curl git
 
 # Oh My Zsh

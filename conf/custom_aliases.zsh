@@ -1,3 +1,5 @@
+alias nv=nvim
+
 alias gdwn="git diff -- . ':(exclude)*.ipynb'"
 alias ys="yarn start"
 alias jn="jupyter notebook"
@@ -19,3 +21,6 @@ alias wk="workon"
 alias freeze='pip freeze > requirements.txt'
 
 alias aws="docker run --rm -it --network=host -v ~/.aws:/root/.aws amazon/aws-cli"
+
+# git spice
+# alias gss="gs repo sync; gs stack restack; gs stack submit"
