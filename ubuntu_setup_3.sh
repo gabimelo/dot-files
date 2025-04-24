@@ -16,8 +16,14 @@ brew install tmux tree htop neovim fzf git-spice git-delta gh pyenv pyenv-virtua
 # generics
 
 mkdir ~/src
-cp -r nvim ~/.config/
+
+# confs
+cp conf/.zshrc ~/.zshrc
+cp conf/custom_aliases.zsh $ZSH_CUSTOM/custom_aliases.zsh
 cp conf/.tmux.conf ~/
+cp -r nvim ~/.config/
+
+#delta
 echo '
 [core]
     pager = delta
