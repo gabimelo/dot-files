@@ -7,7 +7,7 @@
 # echo >> /Users/gabimelo/.zprofile
 # echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/gabimelo/.zprofil
 # eval "$(/opt/homebrew/bin/brew shellenv)"
-brew install tmux tree htop neovim fzf git-spice git-delta gh pyenv fd ripgrep fnm
+brew install tmux tree htop neovim fzf git-spice git-delta gh pyenv pyenv-virtualenv fd ripgrep fnm
 
 ## ubuntu
 # sudo apt-get install vim tmux jq tree xclip htop neovim fzf
