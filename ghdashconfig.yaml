@@ -1,0 +1,87 @@
+prSections:
+   - title: Standalone
+     filters: is:open author:@me NOT "stack_key" sort:updated
+   - title: "stack_key"
+     filters: is:open author:@me "stack_key" sort:updated
+   - title: Review requested
+     filters: is:open -is:draft -team-review-requested:some_team review-requested:@me -review:approved -repo:some_repo sort:updated
+   - title: team review req
+     filters: is:open -is:draft team-review-requested:some_team -author:@me -review:approved -review-requested:@me sort:updated
+   - title: Involved
+     filters: is:open -is:draft involves:@me -author:@me -review:approved sort:updated
+   - title: Recent
+     filters: is:merged review-requested:@me sort:updated updated:>={{ nowModify "-2w" }}
+ defaults:
+   preview:
+     open: true
+     width: 80
+   prsLimit: 20
+   view: prs
+ theme:
+   ui:
+     sectionsShowCount: true
+     table:
+       showSeparator: false
+       compact: false
+   colors:
+     text:
+       primary: "#E2E1ED"
+       secondary: "#666CA6"
+       inverted: "#242347"
+       faint: "#B0B3BF"
+       warning: "#E0AF68"
+       success: "#3DF294"
+     background:
+       selected: "#1B1B33"
+     border:
+       primary: "#383B5B"
+       secondary: "#39386B"
+       faint: "#2B2B40"
+   #colors:
+     #text:
+       #primary: "#c6d0f5"
+       #secondary: "#ea999c"
+       #inverted: "#232634"
+       #faint: "#b5bfe2"
+       #warning: "#e5c890"
+       #success: "#a6d189"
+       #error: "#e78284"
+     #background:
+       #selected: "#414559"
+     #border:
+       #primary: "#ea999c"
+       #secondary: "#51576d"
+       #faint: "#414559"
+   #colors:
+     #text:
+       #primary: "#cdd6f4"
+       #secondary: "#b4befe"
+       #inverted: "#11111b"
+       #faint: "#bac2de"
+       #warning: "#f9e2af"
+       #success: "#a6e3a1"
+       #error: "#f38ba8"
+     #background:
+       #selected: "#313244"
+     #border:
+       #primary: "#b4befe"
+       #secondary: "#45475a"
+       #faint: "#313244"
+   #colors:
+     #text:
+       #primary: "#cad3f5"
+       #secondary: "#7dc4e4"
+       #inverted: "#181926"
+       #faint: "#b8c0e0"
+       #warning: "#eed49f"
+       #success: "#a6da95"
+       #error: "#ed8796"
+     #background:
+       #selected: "#363a4f"
+     #border:
+       #primary: "#7dc4e4"
+       #secondary: "#494d64"
+       #faint: "#363a4f"
+ pager:
+   #diff: diff-so-fancy | less --tabs=4 -RF
+   diff: delta
