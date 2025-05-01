@@ -9,6 +9,10 @@
 # eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install tmux tree htop neovim fzf git-spice git-delta gh pyenv pyenv-virtualenv fd ripgrep fnm
 
+### for python
+
+brew install openssl readline sqlite3 xz zlib tcl-tk@8 libb2
+
 ## ubuntu
 # sudo apt-get install vim tmux jq tree xclip htop neovim fzf
 # curl https://pyenv.run | bash
